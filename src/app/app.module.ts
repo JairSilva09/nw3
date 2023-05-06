@@ -9,7 +9,7 @@ import {  HttpClientModule } from '@angular/common/http';
 import { SettingBoxComponent } from './components/setting-box/setting-box.component';
 import { FormsModule } from '@angular/forms';
 import { RigthSideBarComponent } from './components/rigth-side-bar/rigth-side-bar.component';
-import { MatIconModule } from '@angular/material/icon'
+import { MatIconModule } from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
