@@ -1,0 +1,134 @@
+.container{
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+}
+.container-center{
+    flex-direction: column;
+    border: solid 5px darkgrey;
+    min-width: 961px;
+    min-height: 725px;
+    margin: 0;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -53%);
+    border-radius: 3px;
+    display: flex;
+
+//     .progress-bar {
+//   width: 0;
+//   height: 100%;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   background-color: orange;
+//   transition: width 0.5s ease-in-out;
+// }
+.Colum1{
+    display: flex;
+    justify-content: space-between;
+
+}
+.Colum2{
+    display: flex;
+
+}
+.Colum3{
+    display: flex;
+
+}
+.Colum4{
+    display: flex;
+
+}
+      
+}
+.menu-container{
+    width: 260px;
+    height: 714px;
+    border: solid 2px darkgrey;
+    margin: 72px 0px 0px 135px;
+    flex-direction: column;
+}
+.hamburger-icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+.bar-menu{
+    background-color: red;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    outline: none;
+    z-index: 9999;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 46px;
+    height: 419px;
+}
+
+
+
+/* Styles for screens with a max width of 768px */
+
+@media (max-width: 768px) {
+
+}
+
+
+
+/* Styles for screens with a minimum width of 992px */
+
+@media (max-width: 992px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .container-center {
+        border: solid 5px darkgrey;
+    min-width: 344px;
+    min-height: 821px;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0) !important;
+    .img2{
+    display: none;
+    }
+    .Colum2{
+        display: flex;
+        flex-direction: column;
+        width: 344px;
+        margin-top: 17px;
+    }
+    .Colum3{
+        display: flex;
+    flex-direction: column;
+    width: 344px;
+    
+      }
+    .Colum4{
+        display: flex;
+    flex-direction: column;
+    width: 344px;
+    
+      }
+      
+     
+      
+      
+
+}
+.menu-container {
+        display: none;
+      }
+      
+      .bar-menu {
+        display: none;
+      }
+
+}
