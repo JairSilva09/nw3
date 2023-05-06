@@ -1,0 +1,29 @@
+<div class="settingsBox">
+
+    <div>Settings</div>
+
+    <div class="label" style="width: 250px; text-align: center;">font size</div>
+
+    <input type="range" style="    margin: 20px;width: 200px;" class="settingsSlide"
+        (change)="setFontSize(groupTestNameFontSize)" [(ngModel)]="groupTestNameFontSize"
+        class="slider-font-size" tickInterval="1" min="1" max="200" [value]="groupTestNameFontSize">
+
+    <div class="label" style="width: 250px; text-align: center;">page columns</div>
+
+    <input type="range" style="margin: 20px;width: 200px;" class="settingsSlide"
+        (change)="setGroupSlideHeight(groupSlideHeihtValue)" [(ngModel)]="groupSlideHeihtValue" tickInterval="1"
+        min="1200" max="10000" [value]="groupSlideHeihtValue">
+
+    <div class="label" style="width: 250px; text-align: center;">line-height</div>
+
+    <input type="range" style="margin: 20px;width: 200px;" class="settingsSlide"
+        (change)="setGroupSlidelineHeight(groupSlidelineHeightValue)" [(ngModel)]="groupSlidelineHeightValue"
+        tickInterval="1" min="1" max="100" [value]="groupSlidelineHeightValue">
+
+    <!-- <div class="label" style="width: 250px; text-align: center;">card width</div>
+
+        <input type="range" style="margin: 20px;width: 200px;" class="settingsSlide"
+            (change)="setCardWidth(cardWidthValue)" [(ngModel)]="cardWidthValue" tickInterval="1" min="1" max="100"
+            [value]="cardWidthValue"> -->
+
+</div>
