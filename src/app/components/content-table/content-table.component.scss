@@ -30,15 +30,16 @@
     }
 }
 
+
 .tableOfContent {
     position: absolute;
-
+    left: -311px;
+    top: -15px;
     width: 260px;
     height: 714px;
     margin: 10px;
     border: solid 1px darkblue;
-    overflow: scroll;
- 
+    overflow: hidden;
     // animation: fadeIn 90ms ease-out 100ms forwards 1;
     // transform: translate(-500px, 0px);
     @include BoxShadow(6);

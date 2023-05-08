@@ -1135,5 +1135,23 @@ export class Nw3Component implements OnInit {
     this.myAngularxQrCode = ' www.mynamepage.com/' + 'PROJECTS';
     console.log(this.isQRcode, this.myAngularxQrCode)
   }
+  moveRight() {
+    if (this.stopMovingForward || this.vote) {
+      this.playSound('03 Primary System Sounds/navigation_forward-selection-minimal.wav', this.soundVolume);
+      this.selectPage('next');
+    }
+  }
 
+  moveLeft1() {
+    if (true) {
+      this.playSound('03 Primary System Sounds/navigation_backward-selection-minimal.wav', this.soundVolume);
+      this.selectPage('previous');
+    }
+  }
+
+  
+  switchFirst() {
+    this.boxes.push(this.boxes.shift());
+    this.moving = false;
+  }
 }

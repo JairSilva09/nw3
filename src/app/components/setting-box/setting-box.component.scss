@@ -32,14 +32,14 @@
 
 .settingsBox {
     position: absolute;
-    right: 21px;
-    top: 91px;
+    right: -316px;
+    top: -14px;
     width: 260px;
     height: 714px;
     margin: 10px;
     border: solid 1px darkblue;
     overflow: hidden;
-    -webkit-animation: fadeIn;
     animation: fadeIn;
+    // transform: translate(0px, 100px);
     @include BoxShadow(6);
 }

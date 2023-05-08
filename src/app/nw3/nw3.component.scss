@@ -1,0 +1,72 @@
+.mainContainerPresent {
+    background-color: white;
+    border: solid 5px #6b6b6b;
+    width: 948px;
+    height: 714px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -53%);
+    transform: translate(-50%, -53%);
+    border-radius: 3px;
+    // background-image: url("https://image.shutterstock.com/shutterstock/photos/1897867054/display_1500/stock-vector-currency-watermark-background-intense-illustration-detailed-design-1897867054.jpg");
+
+    // @include BoxShadow(6);
+
+    .nameContainer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 948px;
+        height: 525px;
+    }
+
+    .item1 {
+        // font-size: 30px;
+        margin-bottom: 161px;
+        margin-top: -15px;
+        // text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+        box-shadow: inset inset 0px 0px 5px #c1c1c1;
+    }
+
+    .testName {
+        font-size: 140px;
+        margin-top: -138px;
+        color: #1d1d1d;
+        font-size: 150px;
+        // text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+        box-shadow: inset inset 0px 0px 5px #c1c1c1;
+    }
+
+    .pronounciation {
+        // font-size: 30px;
+        // text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+        box-shadow: inset inset 0px 0px 5px #c1c1c1;
+    }
+
+    .rationale {
+        // font-size: 35px;
+        // text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+        box-shadow: inset inset 0px 0px 5px #c1c1c1;
+    }
+
+    .menu-left-icon {
+        position: absolute;
+        right: -50px;
+        top: 45%;
+        outline: none;
+        text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+        box-shadow: inset inset 0px 0px 5px #c1c1c1;
+    }
+
+    .menu-right-icon {
+        position: absolute;
+        left: -50px;
+        top: 45%;
+        outline: none;
+        text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+        box-shadow: inset inset 0px 0px 5px #c1c1c1;
+    }
+}

@@ -7,9 +7,17 @@
             [slideData]="slideData" (pageNumberChange)="pageNumberChange($event)"></app-content-table>
 
         <app-setting-box *ngIf="isSettings" [projectName]="projectName"></app-setting-box>
+        <button (click)="moveRight()" class="menu-left-icon" mat-icon-button>
+            <mat-icon>keyboard_arrow_right</mat-icon>
+        </button>
 
-        <app-rigth-side-bar></app-rigth-side-bar>
+        <button (click)="moveLeft1()" class="menu-right-icon" mat-icon-button>
+            <mat-icon>keyboard_arrow_left</mat-icon>
+        </button>
         <app-slides [backgroundImg]="slideBackground" [slideFormat]="slideType"></app-slides>
+        <app-rigth-side-bar></app-rigth-side-bar>
+
+     
     </div>
 </div>
 <app-qr-code [qrCode]="myAngularxQrCode" [diplayQr]="isQRcode"></app-qr-code>
