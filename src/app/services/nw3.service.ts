@@ -153,6 +153,7 @@ export class Nw3Service {
       name:
         name
     }
+    console.log(this.http.post(this.webBaseUrlVote + 'UserListVote', JSON.stringify(data), httpOptions))
     return this.http.post(this.webBaseUrlVote + 'UserListVote', JSON.stringify(data), httpOptions);
   }
 

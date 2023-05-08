@@ -1,0 +1,11 @@
+.corner_bar_menu {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    outline: none;
+    z-index: 9999;
+    background: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,5 +1,15 @@
-<app-content-table *ngIf="isTableContent" class="tableOfContent" style="overflow-y:scroll ; overflow-x: hidden;" [slideData]="slideData" 
- ></app-content-table>
+<div (click)="noClickanyWhere()" class="page">
+    <div class="mainContainerPresent mat-elevation-z8" [style.background-image]="slideNameBackground">
+        <mat-progress-bar mode="determinate" [value]="currentProgress" color="warn" style="z-index: 99999;height: 5px;">
+        </mat-progress-bar>
 
- <app-setting-box *ngIf="isSettings" [projectName]="projectName"></app-setting-box>
+        <app-content-table *ngIf="isTableContent" class="tableOfContent" style="overflow-y:scroll ; overflow-x: hidden;"
+            [slideData]="slideData" (pageNumberChange)="pageNumberChange($event)"></app-content-table>
 
+        <app-setting-box *ngIf="isSettings" [projectName]="projectName"></app-setting-box>
+
+        <app-rigth-side-bar></app-rigth-side-bar>
+        <app-slides [backgroundImg]="slideBackground" [slideFormat]="slideType"></app-slides>
+    </div>
+</div>
+<app-qr-code [qrCode]="myAngularxQrCode" [diplayQr]="isQRcode"></app-qr-code>
